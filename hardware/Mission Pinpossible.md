@@ -37,5 +37,6 @@ And with that, either decoding manually or using a script: <img width="905" heig
 *Flag*: `HTB{84d_d3519n_c4n_134d_70_134k5!d@}`
 
 Lưu ý: so sánh với 1 chall dùng Saleae Logic 2 như Debugging Interface:
-1. Protocol: DI's protocol là Async Serial (UART), còn với MissPin là I2C
-2. Dữ liệu gửi qua Async Serial trong DI là message thật, chỉ cần decode là xong. Còn dữ liệu gửi trong MissPin là command để điều khiển sự hiển thị trên LCD, không phải chỉ decode là ra message, decode ra tin hiệu lệnh, tín hiệu lệnh vẽ lên LCD mới ra message.
+1. Protocol: DI's protocol là Async Serial (UART) - không có clock và cần baud rate chính xác, còn với MissPin là I2C - có clock
+2. Đối tượng bị intercept trong DI là debugging interface - thứ mà developer sẽ đọc được khi nhận data. Còn đối tượng trong MissPin là LCD.
+3. Dữ liệu gửi qua Async Serial trong DI là message thật, chỉ cần decode là xong. Còn dữ liệu gửi trong MissPin là command để điều khiển sự hiển thị trên LCD, không phải chỉ decode là ra message, decode ra tin hiệu lệnh, tín hiệu lệnh vẽ lên LCD mới ra message.
