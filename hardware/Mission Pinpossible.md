@@ -35,3 +35,7 @@ So we have to look at the packet where both bit 0 and bit 2 are 1, and the upper
 And with that, either decoding manually or using a script: <img width="905" height="474" alt="image" src="https://github.com/user-attachments/assets/a6ae78db-7d2e-47cd-a97c-ffdc685819b1" />
 
 *Flag*: `HTB{84d_d3519n_c4n_134d_70_134k5!d@}`
+
+Lưu ý: so sánh với 1 chall dùng Saleae Logic 2 như Debugging Interface:
+1. Protocol: DI's protocol là Async Serial (UART), còn với MissPin là I2C
+2. Dữ liệu gửi qua Async Serial trong DI là message thật, chỉ cần decode là xong. Còn dữ liệu gửi trong MissPin là command để điều khiển sự hiển thị trên LCD, không phải chỉ decode là ra message, decode ra tin hiệu lệnh, tín hiệu lệnh vẽ lên LCD mới ra message.
