@@ -8,6 +8,8 @@ title: Debugging Interface
 ![bilde](https://hackmd.io/_uploads/BkhjJw78xl.png)
 https://support.saleae.com/protocol-analyzers/analyzer-user-guides/using-async-serial
 
+When having found the "smallest" and divided as docs -> not standard baud rate, don't worry, take it. 
+
 Command to convert a csv column to row: 
 ```bash
 cut -d',' -f[n] export.csv | tr -d '"' | paste
