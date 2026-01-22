@@ -10,7 +10,7 @@ From reading the manual above, we have for us the 2 most important commands: `FS
 
 <img width="637" height="383" alt="image" src="https://github.com/user-attachments/assets/3cece484-6a48-4f8d-83bc-80754b49f70f" />
 
-Using the filesystem syntax above, trying with `@PJL FSDIRLIST NAME="0:/"` returned
+Using the filesystem syntax above, trying with `@PJL FSDIRLIST NAME="0:/"` (guess what, maybe HTB hates Windows, the `\` didn't work) returned
 
 <img width="449" height="373" alt="image" src="https://github.com/user-attachments/assets/1bd2c5d0-cc69-496c-b8b5-c83c66c9fc0e" />
 
